@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<!DOCTYPE BookCatalog[
+<!ELEMENT BookCatalog (Book*)> 
+<!ELEMENT Book (Title, Author, Year)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT Year (#PCDATA)>
+]>
+
+
+<BookCatalog>
+	<Book>
+		<Title>국가란 무엇인가</Title>
+		<Author>유시민</Author>
+		<Year>2017</Year>
+	</Book>
+
+	<Book>
+		<Title>참을 수 없는 존재의 가벼움</Title>
+		<Author>밀란쿤데라</Author>
+		<Year>1988</Year>
+	</Book>
+
+</BookCatalog>

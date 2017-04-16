@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<!DOCTYPE students
+[<!ELEMENT students (student)*>
+ <!ELEMENT student (name, age, speciality, grade)>
+ <!ELEMENT name (#PCDATA)>
+ <!ELEMENT age (#PCDATA)>
+ <!ELEMENT speciality (#PCDATA)>
+ <!ELEMENT grade (#PCDATA)>
+]>
+
+<students>
+    <student>
+        <name>박성숙</name>
+        <age>24</age>
+        <speciality>통계학</speciality>
+        <grade>4</grade>
+    </student>
+    <student>
+        <name>조정헌</name>
+        <age>23</age>
+        <speciality>국어국문학</speciality>
+        <grade>3</grade>
+    </student>
+  </students>

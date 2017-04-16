@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding ="utf-8"?>
+
+<!ELEMENT BookCatalog (Book)*> 
+<!ELEMENT Book ((BookCode|Title), (CoAuthor|Author), Year, Summary)>
+<!ELEMENT BookCode (#PCDATA)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT CoAuthor (#PCDATA|Author)*> 
+<!ELEMENT Year (#PCDATA)>
+<!ELEMENT Summary ANY>
+
+<!ATTLIST Book code ID #REQUIRED>
+<!ATTLIST Book lang CDATA "KOREAN">

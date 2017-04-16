@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<audioCatalog xmlns = "JHJ"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="EX4-7.xsd"
+		>
+	<mp3  lang = "한국어">
+		<artist>볼빨간 사춘기</artist>
+		<title>1집</title>
+		<genre>acustic</genre>
+		<released-date>2016</released-date>
+				<Name>나만안되는연애</Name>
+		<playTime>
+		<Hours>1</Hours>
+		<Minutes>12</Minutes>
+		<Seconds>13</Seconds>
+		</playTime>
+
+		
+		<song>초콜릿</song>
+		<song>프리지아</song>
+
+	</mp3>
+
+	<cd  lang= "영어">
+		<artist>볼빨간 사춘기</artist>
+		<title>1집</title>
+		<genre>acustic</genre>
+		<released-date>2016</released-date>
+		<song>우주를줄게</song>
+		<song>심술</song>
+	</cd>
+</audioCatalog>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding ="EUC-KR"?>
+
+<present:BookCatalog xmlns:present="www.thepresentisthepresent.com">
+
+<present:BookCatalog>
+	<present:Book>
+		<present:Title>국가란 무엇인가</present:Title>
+		<present:Author>유시민</present:Author>
+		<present:Year>2017</present:Year>
+		<present:Summary><![CDATA[중요한 책<중요>]]></present:Summary>
+	</present:Book>
+
+	<present:Book>
+		<present:Title>참을 수 없는 존재의 가벼움</present:Title>
+		<present:Author>밀란쿤데라</present:Author>
+		<present:Year>1988</present:Year>
+		<present:Summary><![CDATA[읽어볼 책"읽기!"]]></present:Summary>
+
+	</present:Book>
+
+</present:BookCatalog>
+
+

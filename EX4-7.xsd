@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="JHJ"
+	xmlns:target="JHJ"
+	elementFormDefault="qualified">
+  
+
+<SimpleType name="HourScope">
+	<restriction base = "int">
+	<minInclusive value ='0'/>
+	<maxInclusive value ='9'/>
+	</restriction>
+</SimpleType>
+
+
+
+<SimpleType name="MinuteScope">
+	<restriction base = "int">
+	<minInclusive value ='0'/>
+	<maxInclusive value ='59'/>
+	</restriction>
+</SimpleType>
+
+
+
+<SimpleType name="SecondScope">
+	<restriction base = "int">
+	<minInclusive value ='0'/>
+	<maxInclusive value ='59'/>
+	</restriction>
+</SimpleType>
+
+
+  <group name="AlbumGroup">
+    <sequence>
+      <element name = "artist" type="string"/>
+      <element name = "title" type="string"/>
+      <element name = "genre" type="string"/>
+      <element name = "released-date" type="string"/>
+      <element name = "song" type="string" maxOccurs="unbounded"/>
+	<complexType>
+		<sequence>
+			<element name "Hours" type = "target:HourScope">
+			<element name "Minutes" type = "target:MinuteSope">
+			<element name "Seconds" type = "target:SecondSope">
+	</sequence>	
+	</complexType>
+    </sequence>
+  </group>
+
+  <element name = "mp3">
+    <complexType>
+      <group ref="target:AlbumGroup"/>
+      <attribute name="lang" type="string" default="한국어"/>    
+    </complexType>
+  </element>
+
+  <element name = "cd">
+    <complexType>
+      <group ref="target:AlbumGroup"/>
+      <attribute name="lang" type="string" default="한국어"/>
+    </complexType>
+  </element>
+  
+  <element name = "audioCatalog">
+	 <complexType >
+		  <sequence>
+        <element ref="target:mp3" maxOccurs="unbounded" />
+        <element ref="target:cd" maxOccurs="unbounded" />
+         </sequence>
+	    	</complexType>
+	    </element>
+
+
+
+
+</schema>

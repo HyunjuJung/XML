@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding ="utf-8"?>
+<!DOCTYPE BookCatalog SYSTEM "외부.dtd">
+
+<BookCatalog>
+	<Book>
+		<Title>국가란 무엇인가</Title>
+		<CoAuthor>
+		주저자 : <Author>유시민</Author>
+		공저자 : <Author>유시민</Author>
+		</CoAuthor>
+		<Year>2017</Year>
+		<Summary>텍스트를 넣어보자</Summary>
+	</Book>
+
+	<Book lang="english">
+		<Title>참을 수 없는 존재의 가벼움</Title>
+		<Author>밀란쿤데라</Author>
+		<Year>1988</Year>
+		<Summary>테그를 넣어보자<Year>1988</Year></Summary>
+	</Book>
+
+</BookCatalog>
